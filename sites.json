@@ -1,0 +1,9 @@
+{
+  "comment": "every: minutes between checks (the workflow runs every 5). n8n webhooks start a workflow execution on each check, so they are checked less often.",
+  "sites": [
+    { "id": "app", "name": "تطبيق الإعلام الأمني", "url": "https://shj-security-media-services.github.io/", "every": 5 },
+    { "id": "n8n", "name": "خادم n8n", "url": "https://ahmedzenary.app.n8n.cloud/healthz", "every": 5 },
+    { "id": "panel", "name": "لوحة التحكم", "url": "https://ahmedzenary.app.n8n.cloud/webhook/tasweer-admin", "every": 30 },
+    { "id": "form", "name": "نموذج طلب التصوير", "url": "https://ahmedzenary.app.n8n.cloud/webhook/tasweer", "every": 30 }
+  ]
+}
